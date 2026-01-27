@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Osama Riyad - Software Engineer specializing in Mobile Development and System Databases">
+    <meta name="keywords"
+        content="Software Engineer, Flutter Developer, Mobile Development, Database Design, SQL, DevOps, AI, ML">
+    <meta name="author" content="Osama Riyad">
+    <title>Osama Riyad - Software Engineer Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(var(--primary-rgb) / <alpha-value>)',
+                        secondary: 'rgb(var(--secondary-rgb) / <alpha-value>)',
+                        accent: 'rgb(var(--accent-rgb) / <alpha-value>)',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-white font-sans min-h-screen">
+
+    <!-- Logo -->
+    <div class="fixed top-6 left-6 z-50">
+        <span id="logo-text" class="text-primary font-mono text-lg font-bold">~/</span>
+    </div>
+
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-md border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-center gap-8">
+                <button data-tab="about"
+                    class="nav-tab active text-white font-medium relative py-2 transition-all duration-300">
+                    About me
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-100 transition-transform duration-300"></span>
+                </button>
+                <button data-tab="portfolio"
+                    class="nav-tab text-gray-400 font-medium relative py-2 hover:text-white transition-all duration-300">
+                    Projects
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 transition-transform duration-300"></span>
+                </button>
+                <button data-tab="stack"
+                    class="nav-tab text-gray-400 font-medium relative py-2 hover:text-white transition-all duration-300">
+                    Stack
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 transition-transform duration-300"></span>
+                </button>
+                <button data-tab="contact"
+                    class="nav-tab text-gray-400 font-medium relative py-2 hover:text-white transition-all duration-300">
+                    Contact
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 transition-transform duration-300"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container mx-auto px-6 pt-32">
+
+        <!-- About me Section -->
+        <section id="about" class="tab-content active min-h-screen flex items-center py-20">
+            <div class="max-w-5xl w-full">
+                <div class="space-y-8 animate-fade-in">
+                    <!-- Main Heading -->
+                    <div class="space-y-4">
+                        <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                            Hey, I'm <span class="text-primary">Osama Riyad</span>
+                        </h1>
+                        <p class="text-2xl md:text-3xl text-gray-400 font-medium">
+                            Software Engineer & Mobile Developer
+                        </p>
+                    </div>
+
+                    <!-- Main Description -->
+                    <div class="space-y-5 pt-4">
+                        <p class="text-gray-300 text-lg md:text-xl leading-relaxed">
+                            Welcome to my <span
+                                class="bg-primary/20 text-primary px-3 py-1.5 rounded-lg font-mono text-sm font-semibold">digital_home</span>
+                            — where passion meets code. I'm a dedicated <strong class="text-white">Software Engineer</strong> 
+                            specializing in <strong class="text-primary">Mobile Development</strong> with Flutter and 
+                            <strong class="text-primary">System Database Design</strong>.
+                        </p>
+                        
+                        <p class="text-gray-400 text-base md:text-lg leading-relaxed">
+                            I craft <strong class="text-white">scalable cross-platform mobile applications</strong> that 
+                            deliver exceptional user experiences. With expertise in <strong class="text-white">Flutter & Dart</strong>, 
+                            I build performant apps using <strong class="text-white">Clean Architecture</strong> and modern 
+                            state management patterns. My backend skills include designing robust <strong class="text-white">database 
+                            architectures</strong> with SQL, NoSQL (MongoDB), and cloud solutions for optimal performance and scalability.
+                        </p>
+                        
+                        <p class="text-gray-400 text-base md:text-lg leading-relaxed">
+                            Beyond mobile development, I explore <strong class="text-white">AI/ML technologies</strong>, 
+                            develop <strong class="text-white">SAAS solutions</strong>, and continuously expand my knowledge 
+                            in modern development practices, DevOps, and emerging technologies. I'm passionate about writing 
+                            clean, maintainable code and solving complex technical challenges.
+                        </p>
+                    </div>
+
+                    <!-- Key Highlights -->
+                    <div class="grid md:grid-cols-3 gap-4 pt-6">
+                        <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-4 hover:border-primary/50 transition-all duration-300">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-mobile-alt text-primary text-xl"></i>
+                                <h3 class="text-white font-semibold">Mobile First</h3>
+                            </div>
+                            <p class="text-gray-400 text-sm">Cross-platform apps with Flutter, delivering native performance</p>
+                        </div>
+                        <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-4 hover:border-primary/50 transition-all duration-300">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-database text-primary text-xl"></i>
+                                <h3 class="text-white font-semibold">Database Expert</h3>
+                            </div>
+                            <p class="text-gray-400 text-sm">Designing scalable database architectures for optimal performance</p>
+                        </div>
+                        <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-4 hover:border-primary/50 transition-all duration-300">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fas fa-brain text-primary text-xl"></i>
+                                <h3 class="text-white font-semibold">AI Enthusiast</h3>
+                            </div>
+                            <p class="text-gray-400 text-sm">Exploring AI/ML integration in modern applications</p>
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack Preview -->
+                    <div class="pt-4">
+                        <p class="text-gray-400 text-sm font-medium mb-3 uppercase tracking-wider">Technologies I Work With</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Clean Architecture</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap gap-4 pt-8">
+                        <button onclick="document.querySelector('[data-tab=portfolio]').click()"
+                            class="bg-primary text-black px-8 py-3.5 rounded-xl font-semibold hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary/20 hover:shadow-primary/40 flex items-center gap-2">
+                            <i class="fas fa-briefcase"></i>
+                            View Projects
+                        </button>
+                        <a href="https://github.com/Osamariyad2003" target="_blank"
+                            class="border-2 border-primary text-primary px-8 py-3.5 rounded-xl font-semibold hover:bg-primary/10 transition-all duration-300 inline-flex items-center gap-2 backdrop-blur-sm bg-gray-900/30">
+                            <i class="fab fa-github"></i>
+                            GitHub Profile
+                        </a>
+                        <a href="https://www.linkedin.com/in/osama-riyad-657540243/" target="_blank"
+                            class="border-2 border-gray-600 text-gray-300 px-8 py-3.5 rounded-xl font-semibold hover:border-primary hover:text-primary transition-all duration-300 inline-flex items-center gap-2 backdrop-blur-sm bg-gray-900/30">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="portfolio" class="tab-content hidden min-h-screen py-20">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl md:text-6xl font-bold mb-4 inline-block relative">
+                        My Projects
+                        <span
+                            class="absolute left-0 -bottom-2 w-full h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></span>
+                    </h2>
+                    <p class="text-gray-400 mt-8 text-lg md:text-xl max-w-3xl mx-auto">
+                        A collection of my work across mobile development, databases, backend systems, and AI/ML
+                    </p>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="flex flex-wrap justify-center gap-3 mb-12">
+                    <button
+                        class="filter-btn active px-5 py-2 rounded-full text-sm font-medium transition-all duration-300"
+                        data-filter="all">All Projects</button>
+                    <button class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition-all duration-300"
+                        data-filter="flutter">Flutter</button>
+                    <button class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition-all duration-300"
+                        data-filter="sql">SQL</button>
+                    <button class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition-all duration-300"
+                        data-filter="ai">AI/ML</button>
+                    <button class="filter-btn px-5 py-2 rounded-full text-sm font-medium transition-all duration-300"
+                        data-filter="backend">Backend</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div id="projectsGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Projects will be loaded from projects.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Stack Section -->
+        <section id="stack" class="tab-content hidden min-h-screen py-20">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl md:text-6xl font-bold mb-4 inline-block relative">
+                        My Tech Stack
+                        <span
+                            class="absolute left-0 -bottom-2 w-full h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></span>
+                    </h2>
+                    <p class="text-gray-400 mt-8 text-lg md:text-xl max-w-3xl mx-auto">
+                        Here are the technologies and tools I use to bring ideas to life. From mobile development to
+                        AI/ML, I'm constantly expanding my expertise.
+                    </p>
+                </div>
+
+                <!-- Skills Grid -->
+                <div id="skillsGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Flutter Skills Card -->
+                    <div class="skill-category-card group">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                                <i class="fab fa-flutter text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Flutter</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="skill-item" data-progress="90">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Dart</span>
+                                    <span class="text-primary font-semibold text-sm">90%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="88">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Flutter Framework</span>
+                                    <span class="text-primary font-semibold text-sm">88%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="78">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">State Management</span>
+                                    <span class="text-primary font-semibold text-sm">78%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="85">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">API Integration</span>
+                                    <span class="text-primary font-semibold text-sm">85%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="80">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">DevTools</span>
+                                    <span class="text-primary font-semibold text-sm">80%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="75">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Web Frontend</span>
+                                    <span class="text-primary font-semibold text-sm">75%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills Card -->
+                    <div class="skill-category-card group">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                                <i class="fab fa-node-js text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Backend</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="skill-item" data-progress="85">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Node.js</span>
+                                    <span class="text-secondary font-semibold text-sm">85%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="82">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Express.js</span>
+                                    <span class="text-secondary font-semibold text-sm">82%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="80">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">RESTful APIs</span>
+                                    <span class="text-secondary font-semibold text-sm">80%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="75">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Flask</span>
+                                    <span class="text-secondary font-semibold text-sm">75%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Skills Card -->
+                    <div class="skill-category-card group">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center">
+                                <i class="fas fa-database text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Database</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="skill-item" data-progress="88">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Database Design</span>
+                                    <span class="text-accent font-semibold text-sm">88%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="85">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Query Optimization</span>
+                                    <span class="text-accent font-semibold text-sm">85%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="82">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">MySQL/PostgreSQL</span>
+                                    <span class="text-accent font-semibold text-sm">82%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="80">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">NoSQL (MongoDB)</span>
+                                    <span class="text-accent font-semibold text-sm">80%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="75">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Supabase</span>
+                                    <span class="text-accent font-semibold text-sm">75%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OOP Skills Card -->
+                    <div class="skill-category-card group">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                                <i class="fas fa-cubes text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">OOP</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="skill-item" data-progress="90">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Design Patterns</span>
+                                    <span class="text-primary font-semibold text-sm">90%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="88">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">SOLID Principles</span>
+                                    <span class="text-primary font-semibold text-sm">88%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="85">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Clean Architecture</span>
+                                    <span class="text-primary font-semibold text-sm">85%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Testing Skills Card -->
+                    <div class="skill-category-card group">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-secondary to-primary rounded-lg flex items-center justify-center">
+                                <i class="fas fa-server text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">DevOps & Testing</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="skill-item" data-progress="85">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Git & GitHub</span>
+                                    <span class="text-secondary font-semibold text-sm">85%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="75">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">CI/CD Pipelines</span>
+                                    <span class="text-secondary font-semibold text-sm">75%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="70">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Docker</span>
+                                    <span class="text-secondary font-semibold text-sm">70%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="80">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Unit & Integration Testing</span>
+                                    <span class="text-secondary font-semibold text-sm">80%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX Skills Card -->
+                    <div class="skill-category-card group">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-accent to-secondary rounded-lg flex items-center justify-center">
+                                <i class="fas fa-paint-brush text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">UI/UX</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="skill-item" data-progress="80">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Figma</span>
+                                    <span class="text-accent font-semibold text-sm">80%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="85">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Responsive Design</span>
+                                    <span class="text-accent font-semibold text-sm">85%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="75">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Prototyping</span>
+                                    <span class="text-accent font-semibold text-sm">75%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programming Languages Skills Card -->
+                    <div class="skill-category-card group">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                                <i class="fas fa-code text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Programming Languages</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="skill-item" data-progress="90">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Dart</span>
+                                    <span class="text-primary font-semibold text-sm">90%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="85">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">JavaScript/TypeScript</span>
+                                    <span class="text-primary font-semibold text-sm">85%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="80">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Python</span>
+                                    <span class="text-primary font-semibold text-sm">80%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="75">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">C++</span>
+                                    <span class="text-primary font-semibold text-sm">75%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Frameworks Skills Card -->
+                    <div class="skill-category-card group">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                                <i class="fas fa-tools text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Tools & Frameworks</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="skill-item" data-progress="90">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">VS Code</span>
+                                    <span class="text-secondary font-semibold text-sm">90%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="85">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Firebase</span>
+                                    <span class="text-secondary font-semibold text-sm">85%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="80">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Postman</span>
+                                    <span class="text-secondary font-semibold text-sm">80%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Software Development Skills Card -->
+                    <div class="skill-category-card group">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center">
+                                <i class="fas fa-laptop-code text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">Software Development</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="skill-item" data-progress="85">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Agile/Scrum</span>
+                                    <span class="text-accent font-semibold text-sm">85%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="88">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Data Structures & Algorithms</span>
+                                    <span class="text-accent font-semibold text-sm">88%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="80">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Problem Solving</span>
+                                    <span class="text-accent font-semibold text-sm">80%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & Machine Learning Skills Card -->
+                    <div class="skill-category-card group">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                                <i class="fas fa-brain text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white">AI & Machine Learning</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="skill-item" data-progress="75">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Machine Learning Basics</span>
+                                    <span class="text-primary font-semibold text-sm">75%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="70">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Model Fine-Tuning</span>
+                                    <span class="text-primary font-semibold text-sm">70%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-progress="65">
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-300 text-sm">Deep Learning Concepts</span>
+                                    <span class="text-primary font-semibold text-sm">65%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="tab-content hidden min-h-screen flex items-center py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-5xl md:text-6xl font-bold mb-8">Let's Connect</h2>
+                <p class="text-gray-400 text-xl mb-12 max-w-2xl mx-auto">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                    visions.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://github.com/Osamariyad2003" target="_blank"
+                        class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-xl flex items-center gap-3 transition-all duration-300 group">
+                        <i class="fab fa-github text-2xl group-hover:text-primary transition-colors"></i>
+                        <span class="font-medium">GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/osama-riyad-657540243/" target="_blank"
+                        class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-xl flex items-center gap-3 transition-all duration-300 group">
+                        <i class="fab fa-linkedin text-2xl group-hover:text-primary transition-colors"></i>
+                        <span class="font-medium">LinkedIn</span>
+                    </a>
+                    <a href="mailto:osamariyad2003@gmail.com"
+                        class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-xl flex items-center gap-3 transition-all duration-300 group">
+                        <i class="fas fa-envelope text-2xl group-hover:text-primary transition-colors"></i>
+                        <span class="font-medium">Email Me</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8 mt-20">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400 text-sm">&copy; 2025 Osama Riyad. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="projects.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
