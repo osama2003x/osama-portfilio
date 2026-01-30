@@ -8,7 +8,7 @@ const projects = [
         title: "MedJust",
         description: "Flutter-based healthcare app for managing appointments, medical records, and communication between doctors and patients.",
         image: "assets/images/med_just.png",
-        category: "Flutter",
+        category: "flutter",
         tags: ["Flutter", "Healthcare", "Mobile App"],
         github: "https://www.mediafire.com/file/cg6456hlp7jfs7u/app-release.apk/file",
         demo: "https://www.mediafire.com/file/cg6456hlp7jfs7u/app-release.apk/file"
@@ -18,7 +18,7 @@ const projects = [
         title: "Ulmo Ecommerce",
         description: "A complete e-commerce platform with product browsing, cart, and checkout.",
         image: "assets/images/ulmo.png",
-        category: "Flutter",
+        category: "flutter",
         tags: ["Flutter", "E-Commerce", "State Management"],
         github: "https://github.com/Osamariyad2003/ulmo_ecmmerce",
         demo: "#"
@@ -28,7 +28,7 @@ const projects = [
         title: "Meal Recommendation AI",
         description: "Flutter mobile app that uses AI to recommend personalized meals based on user preferences, goals, and dietary restrictions.",
         image: "assets/images/meal_recommendation.png",
-        category: "Flutter",
+        category: "flutter",
         tags: ["AI", "Flutter", "Recommendation System"],
         github: "https://github.com/Osamariyad2003/meal_recommendation_ai",
         demo: "#"
@@ -70,7 +70,7 @@ const projects = [
         title: "Kaboom",
         description: "Fast-paced browser game built with modern web technologies and responsive UI.",
         image: "assets/images/kaboom.png",
-        category: "Web",
+        category: "web",
         tags: ["Web Frontend", "Game", "Interactive"],
         github: "https://github.com/Osamariyad2003/Kaboom",
         demo: "https://osamariyad2003.github.io/Kaboom/"
@@ -79,10 +79,10 @@ const projects = [
     // Other Projects (Placeholders/Previous)
     {
         id: 9,
-        title: "ARD Database System",
+        title: "ARD ",
         description: "Academic research database system with ERD design, optimized queries, and reports for space and satellite data.",
         image: "assets/images/ard.png",
-        category: "Flutter",
+        category: "flutter",
         tags: ["Flutter", "NASA", "Optimization"],
         github: "https://github.com/Osamariyad2003/ARD",
         demo: "https://github.com/Osamariyad2003/ARD"
@@ -92,7 +92,7 @@ const projects = [
         title: "Bookly",
         description: "Flutter application for discovering bestselling books, writing and sharing summaries, and tracking personal reading activity.",
         image: "assets/images/bookly.png",
-        category: "Flutter",
+        category: "flutter",
         tags: ["Flutter", "Books", "Community"],
         github: "https://github.com/Osamariyad2003/bookly",
         demo: "https://github.com/Osamariyad2003/bookly"
@@ -101,8 +101,8 @@ const projects = [
         id: 11,
         title: "Health Hearts at Home (HeartHub)",
         description: "Comprehensive Flutter app for caregivers of children with Congenital Heart Disease (CHD). Features health tracking (growth, feeding, vitals), AI-powered recipe suggestions, educational resources, bilingual support (English/Arabic), and hospital directory integration.",
-        image: "https://via.placeholder.com/400x300/1a1a1a/ec4899?text=HeartHub",
-        category: "Flutter",
+        image: "assets/images/chd.jpeg",
+        category: "flutter",
         tags: ["Flutter", "Healthcare", "Firebase", "AI", "Mobile App"],
         github: "https://github.com/Osamariyad2003/hhh_app",
         demo: "https://drive.google.com/file/d/15fff4joSZhXiSpyjnsfdHkCPrUSAe-bQ/view?usp=drivesdk"
@@ -112,7 +112,7 @@ const projects = [
         title: "Weather-AI",
         description: "Flutter mobile application with Clean Architecture providing real-time weather updates and AI-driven predictions. Features secure authentication, Cubit state management, and modern UI for accurate weather forecasting.",
         image: "assets/images/clouds.png",
-        category: "Flutter",
+        category: "flutter",
         tags: ["Flutter", "AI", "Weather", "Clean Architecture", "Mobile App"],
         github: "https://github.com/Osamariyad2003/weather_ai_model",
         demo: "#"
@@ -122,12 +122,12 @@ const projects = [
         title: "Volleyball Stats",
         description: "Flutter Material Design app for tracking volleyball statistics and tournament data. Built with MVP architecture, integrates with SportRadar API for real-time match data, includes error handling and empty state screens.",
         image: "assets/images/volleyball.png",
-        category: "Flutter",
+        category: "flutter",
         tags: ["Flutter", "Material Design", "MVP Architecture", "Sports", "API Integration"],
         github: "https://github.com/Osamariyad2003/vollyball_stats",
         demo: "#"
     },
- 
+
     {
         id: 14,
         title: "AI Audit Monitoring Model",
@@ -138,7 +138,7 @@ const projects = [
         github: "#",
         demo: "#"
     },
- 
+
 
 ];
 

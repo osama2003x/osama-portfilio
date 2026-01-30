@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     projectCards.forEach(card => {
                         const category = card.getAttribute('data-category');
 
-                        if (filter === 'all' || category === filter) {
+                        if (filter === 'all' || category.toLowerCase() === filter.toLowerCase()) {
                             card.style.display = 'block';
                             setTimeout(() => {
                                 card.style.opacity = '1';

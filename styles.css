@@ -40,7 +40,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: 
+    background:
         radial-gradient(circle at 20% 50%, rgba(var(--primary-rgb), 0.05) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(var(--secondary-rgb), 0.05) 0%, transparent 50%),
         radial-gradient(circle at 40% 20%, rgba(var(--accent-rgb), 0.03) 0%, transparent 50%);
@@ -48,7 +48,7 @@ body::before {
     z-index: 0;
 }
 
-body > * {
+body>* {
     position: relative;
     z-index: 1;
 }
@@ -273,8 +273,13 @@ section {
 }
 
 @keyframes shimmer {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 /* Project Cards */
@@ -504,21 +509,28 @@ footer {
         transform: translateX(-50%);
         right: auto;
         border-radius: 20px;
-        margin: 0 20px;
+        margin: 0;
+        width: 90%;
+        max-width: 400px;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        z-index: 100;
     }
 
     nav div {
-        padding: 12px 20px;
-        gap: 24px;
+        padding: 8px 4px;
+        gap: 0;
+        width: 100%;
+        display: flex;
+        /* Ensure flex behavior */
     }
 
     .nav-tab {
         font-size: 14px;
     }
-    
+
     .project-card,
     .skill-category-card {
         border-radius: 16px;
+        padding: 1.5rem !important;
     }
 }
